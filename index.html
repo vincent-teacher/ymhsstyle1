@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>楊梅高中梅岡風</title>
+<meta name="description" content="楊梅高中校園刊物「梅岡風」數位典藏：逐期瀏覽、全文檢索、時光軸與閱讀足跡。">
+<link rel="icon" href="assets/badge.jpg">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<!-- 圖示集（內嵌 SVG，不使用外部資源） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 9.8V20h4.8v-5.5h3.4V20h4.8V9.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5C6.5 4 9.5 4 12 5.8 14.5 4 17.5 4 20 5.5V19c-2.5-1.4-5.5-1.4-8 .5-2.5-1.9-5.5-1.9-8-.5z M12 5.8v13.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-time" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z" fill="currentColor"/></symbol>
+    <symbol id="i-heart-o" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><path d="M12 8.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8zm8.2 4.8-.1-2.8 2-1.6-2-3.4-2.4.9-2.4-1.4-.4-2.5h-4l-.4 2.5-2.4 1.4-2.4-.9-2 3.4 2 1.6v2.8l-2 1.6 2 3.4 2.4-.9 2.4 1.4.4 2.5h4l.4-2.5 2.4-1.4 2.4.9 2-3.4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="15.5" cy="8.5" r="1.5" fill="currentColor"/><circle cx="8.5" cy="15.5" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m14.5 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9.5 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11h6M11 8v6m5 3 4 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11h6m2 6 4 4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-width" viewBox="0 0 24 24"><path d="M3 12h18M6.5 8.5 3 12l3.5 3.5M17.5 8.5 21 12l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path d="M5 5h14M5 10h14M5 15h9M5 20h6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v11m-4.5-4.5L12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v1.5A3.5 3.5 0 0 0 7.5 11M17 6h3v1.5a3.5 3.5 0 0 1-3.5 3.5M12 14v3.5M8 20.5h8M9.5 17.5h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="7.5" r="1.4" fill="currentColor"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5" fill="currentColor"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5" fill="currentColor"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5" fill="currentColor"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="4.8" cy="6" r="1.5" fill="currentColor"/><circle cx="4.8" cy="12" r="1.5" fill="currentColor"/><circle cx="4.8" cy="18" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-full" viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sort" viewBox="0 0 24 24"><path d="M7 4v16m0 0-3-3m3 3 3-3M17 20V4m0 0-3 3m3-3 3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plum" viewBox="0 0 40 40"><g fill="currentColor"><circle cx="20" cy="9" r="7.2"/><circle cx="30.5" cy="16.6" r="7.2"/><circle cx="26.5" cy="29" r="7.2"/><circle cx="13.5" cy="29" r="7.2"/><circle cx="9.5" cy="16.6" r="7.2"/></g><circle cx="20" cy="20" r="4.2" fill="#ffd54a"/></symbol>
+    <symbol id="i-news" viewBox="0 0 24 24"><rect x="3" y="4" width="15" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 8h3v10a2 2 0 0 1-2 2H5M6.5 8h8M6.5 12h8M6.5 16h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<div id="app">
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="回到首頁">
+      <img class="brand-badge" src="assets/badge.jpg" alt="楊梅高中校徽">
+      <span class="brand-text">
+        <span class="brand-school" data-i18n="school">楊梅高中</span>
+        <img class="brand-logo" src="assets/logo.png" alt="梅岡風">
+      </span>
+    </a>
+    <nav class="mainnav" aria-label="主選單">
+      <a href="#/" data-nav="home"><svg><use href="#i-home"/></svg><span data-i18n="nav.home">首頁</span></a>
+      <a href="#/issues" data-nav="issues"><svg><use href="#i-book"/></svg><span data-i18n="nav.issues">期刊瀏覽</span></a>
+      <a href="#/search" data-nav="search"><svg><use href="#i-search"/></svg><span data-i18n="nav.search">全文檢索</span></a>
+      <a href="#/timeline" data-nav="timeline"><svg><use href="#i-time"/></svg><span data-i18n="nav.timeline">時光軸</span></a>
+      <a href="#/my" data-nav="my"><svg><use href="#i-trophy"/></svg><span data-i18n="nav.my">我的梅岡</span></a>
+      <a href="#/about" data-nav="about"><svg><use href="#i-info"/></svg><span data-i18n="nav.about">關於</span></a>
+    </nav>
+    <form class="quicksearch" id="quickSearch" role="search">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="quickInput" data-i18n-ph="search.ph" placeholder="搜尋全部版面文字…" aria-label="搜尋">
+    </form>
+    <button class="iconbtn" id="btnRandom" title="隨機翻一版" data-i18n-title="random"><svg><use href="#i-dice"/></svg></button>
+    <button class="iconbtn" id="btnSettings" title="設定" data-i18n-title="settings"><svg><use href="#i-gear"/></svg></button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="footer">
+    <img src="assets/badge.jpg" alt="" class="footer-badge">
+    <div>
+      <div class="footer-title">楊梅高中梅岡風 · <span data-i18n="footer.sub">校園刊物數位典藏</span></div>
+      <div class="footer-meta" id="footerMeta"></div>
+    </div>
+  </footer>
+</div>
+
+<!-- 手機底部選單（放在 header 外，避免 fixed 定位受影響） -->
+<nav class="bottomnav" aria-label="底部選單">
+  <a href="#/" data-nav="home"><svg><use href="#i-home"/></svg><span data-i18n="nav.home">首頁</span></a>
+  <a href="#/issues" data-nav="issues"><svg><use href="#i-book"/></svg><span data-i18n="nav.issuesShort">瀏覽</span></a>
+  <a href="#/search" data-nav="search"><svg><use href="#i-search"/></svg><span data-i18n="nav.searchShort">檢索</span></a>
+  <a href="#/timeline" data-nav="timeline"><svg><use href="#i-time"/></svg><span data-i18n="nav.timelineShort">時光</span></a>
+  <a href="#/my" data-nav="my"><svg><use href="#i-trophy"/></svg><span data-i18n="nav.myShort">我的</span></a>
+</nav>
+
+<!-- 閱讀器 -->
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="版面閱讀器">
+  <div class="v-top">
+    <div class="v-title" id="vTitle"></div>
+    <div class="v-tools">
+      <button class="vbtn" data-act="zoomout" title="縮小"><svg><use href="#i-minus"/></svg></button>
+      <span class="v-zoom" id="vZoom">100%</span>
+      <button class="vbtn" data-act="zoomin" title="放大"><svg><use href="#i-plus"/></svg></button>
+      <button class="vbtn" data-act="fit" title="整版"><svg><use href="#i-fit"/></svg></button>
+      <button class="vbtn" data-act="width" title="符合寬度"><svg><use href="#i-width"/></svg></button>
+      <button class="vbtn" data-act="text" title="本版文字"><svg><use href="#i-text"/></svg></button>
+      <button class="vbtn" data-act="fav" title="收藏"><svg><use href="#i-heart-o"/></svg></button>
+      <button class="vbtn" data-act="hires" title="載入高解析原圖"><span class="hd">HD</span></button>
+      <a class="vbtn" id="vOrig" title="開啟原始圖檔" target="_blank" rel="noopener"><svg><use href="#i-down"/></svg></a>
+      <button class="vbtn" data-act="copy" title="複製連結"><svg><use href="#i-link"/></svg></button>
+      <button class="vbtn v-close" data-act="close" title="關閉 (Esc)"><svg><use href="#i-x"/></svg></button>
+    </div>
+  </div>
+  <div class="v-body">
+    <div class="v-stage" id="vStage">
+      <div class="v-canvas" id="vCanvas">
+        <img id="vImg" alt="" draggable="false">
+        <div class="v-marks" id="vMarks"></div>
+      </div>
+      <div class="v-loading" id="vLoading"><svg class="spin"><use href="#i-plum"/></svg></div>
+      <button class="v-nav v-prev" data-act="prev" title="上一版 (←)"><svg><use href="#i-left"/></svg></button>
+      <button class="v-nav v-next" data-act="next" title="下一版 (→)"><svg><use href="#i-right"/></svg></button>
+      <div class="v-hint" id="vHint"></div>
+    </div>
+    <aside class="v-side" id="vSide" hidden>
+      <div class="v-side-head">
+        <strong data-i18n="viewer.text">本版文字</strong>
+        <input type="search" id="vFind" placeholder="在本版中尋找…" data-i18n-ph="viewer.find">
+      </div>
+      <p class="v-side-note" data-i18n="viewer.ocrNote">文字由電腦自動辨識（OCR），可能有誤字；點選任一行可放大到該位置。</p>
+      <div class="v-lines" id="vLines"></div>
+    </aside>
+  </div>
+  <div class="v-strip" id="vStrip"></div>
+</div>
+
+<!-- 設定面板 -->
+<div class="drawer" id="settings" hidden>
+  <div class="drawer-card" role="dialog" aria-label="設定">
+    <div class="drawer-head">
+      <h2><svg><use href="#i-gear"/></svg><span data-i18n="settings">設定</span></h2>
+      <button class="iconbtn" data-close><svg><use href="#i-x"/></svg></button>
+    </div>
+    <div class="set-row"><span data-i18n="set.full">全螢幕</span><div class="seg" data-set="full"></div></div>
+    <div class="set-row"><span data-i18n="set.sound">音效</span><div class="seg" data-set="sound"></div></div>
+    <div class="set-row"><span data-i18n="set.device">裝置</span><div class="seg" data-set="device"></div></div>
+    <div class="set-row"><span data-i18n="set.layout">版面方向</span><div class="seg" data-set="layout"></div></div>
+    <div class="set-row"><span data-i18n="set.lang">語言</span><div class="seg" data-set="lang"></div></div>
+    <div class="set-row"><span data-i18n="set.font">字體大小</span><div class="seg" data-set="font"></div></div>
+    <div class="set-row"><span data-i18n="set.theme">主題</span><div class="seg" data-set="theme"></div></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="data/issues.js?v=1790527173"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
